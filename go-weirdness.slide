@@ -1,0 +1,41 @@
+# Before You Go
+27 August 2020
+
+Ankita Kumari
+ankita.kumari@uber.com
+
+## Agenda
+- Receivers
+- Interface
+- Receivers and Interface
+- What went wrong?
+
+## Receiver
+.link https://play.golang.org/p/lJdIjQnbsp7 Function_Params
+.link https://play.golang.org/p/_-he4LKZWwh Receivers
+
+## Interface
+.link https://play.golang.org/p/UpxLw2v4eJE Pointer_VS_Value_Receivers
+.link https://play.golang.org/p/IC_imHfp7FP Interface_AS_Param
+.link https://play.golang.org/p/MtDnkO_V0sH Simpler_Example
+
+: Interface as a contract
+: Interface Satisfaction
+: Each grouping of concrete types based on their shared behaviors can be expressed as an interface type
+: talk about comparision
+
+## So what went wrong?
+.link https://golangbyexample.com/pointer-vs-value-receiver-method-golang/ Pointer_VS_Value_Receivers_ON_Interfaces
+
+## What did we learn then?
+- Sometimes Go takes addresses of variables automatically to go from T to *T.
+- Go does not do this for function params however, only for receivers
+- And even in that case, only when your receiver is T, it can accept both T and *T. 
+But when your receiver is *T, it only accepts *T.
+
+## Other stumbles along the road
+- ThriftRW vs Thriftc
+- Mockery generates code with pointer receiver by default. Why does thrift generate code with value receivers?
+- Maybe next session on Thrift!
+
+
