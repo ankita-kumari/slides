@@ -28,9 +28,9 @@ ankita.kumari@uber.com
 .link https://golangbyexample.com/pointer-vs-value-receiver-method-golang/ Pointer_VS_Value_Receivers_ON_Interfaces
 
 ## What did we learn then?
-- Sometimes Go takes addresses of variables automatically to go from T to *T.
+- Sometimes Go takes addresses of variables automatically to go from T to *T and *T to T.
 - Go does not do this for function params however, only for receivers
-- And even in that case, only when your receiver is T, it can accept both T and *T. 
+- And even in that case, if we are dealing with interfaces, only when your receiver is T, it can accept both T and *T. 
 But when your receiver is *T, it only accepts *T.
 
 ## Other stumbles along the road
